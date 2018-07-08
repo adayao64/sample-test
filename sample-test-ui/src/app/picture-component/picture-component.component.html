@@ -1,0 +1,23 @@
+<div class="col-md-6">
+  <h2> User Details</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>CreateAt</th>
+      <th>Name</th>
+      <th>ImageUrl</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of pictures">
+      <td>{{user.id}}</td>
+      <td>{{user.createdAt}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.imageUrl}}</td>
+      <td><img src='{{user.imageUrl}}'></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
